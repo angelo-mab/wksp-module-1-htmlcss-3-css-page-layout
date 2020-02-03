@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+.main {
+  text-align: center;
+  margin-top: 10px;
+}
+.deal {
+  border: solid #808080;
+  border-radius: 5px;
+  padding: 5px 10px;
+  line-height: 1.6;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.text {
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
+}
+.center-content {
+  text-align: center;
+}
+.link {
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+}
+.link::after {
+  content: ">";
+  padding-left: 8px;
+  display: inline-block;
+}

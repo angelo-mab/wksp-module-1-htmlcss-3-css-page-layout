@@ -1,0 +1,10 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.image {
+  width: 100%;
+  display: block;
+  outline: 1px solid red;
+}

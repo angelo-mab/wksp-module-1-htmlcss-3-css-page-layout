@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+.nav {
+  background-color: #3a363a;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  display: flex;
+}
+.nav > a {
+  text-decoration: none;
+  color: white;
+  margin: 0 40px;
+  transition: opacity 0.2s ease-in-out;
+}
+.nav > a:hover{
+ opacity: .5;
+}
+.logo {
+  display: block;
+}

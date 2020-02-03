@@ -1,26 +1,50 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 .container {
-    display: grid;
-    min-height: 100vh;
+  display: grid;
+  min-height: 100vh;
+  grid-template-areas:
+    "nav"
+    "main"
+    "footer";
+    grid-template-rows: auto 1fr auto;
 }
 
 .nav {
-    height: 50px;
-    background-color: rebeccapurple;
+  height: 50px;
+  background-color: rebeccapurple;
+  grid-area: nav;
+  /* this asigns these areas with a name */
 }
 
 .aside {
-    background-color: forestgreen;
+  background-color: forestgreen;
+  grid-area: aside;
+  display: none;
 }
 
 .main {
-
+  grid-area: main;
+    text-align: center;
+    
 }
 
 .footer {
-    height: 100px;
-    background-color: midnightblue;
+  height: 100px;
+  background-color: midnightblue;
+  grid-area: footer;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    grid-template-areas:
+      "nav nav nav"
+      "aside main main"
+      "aside footer footer";
+  }
+  .aside {
+    display: block;
+  }
 }

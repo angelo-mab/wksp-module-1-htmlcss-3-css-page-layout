@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  /* grid-template-rows: <first row> | <second row> | <third row> 
+  In this case, the first and third row will be given the width of the row 'auto' which coresponds to 50px.
+  The rest of the space will be divided into fractions (fr), in this case 1fr set to the second row.
+  You can use the fr flex unit to distribute the remaining space across all flex rows. */
+}
+
+.bar {
+  height: 50px;
+  background-color: grey;
+  color: white;
+}
+.middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

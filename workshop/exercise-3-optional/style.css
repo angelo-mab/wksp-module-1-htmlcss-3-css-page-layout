@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: darkgrey;
+}
+.container {
+  min-height: 100vh;
+}
+
+.bar {
+  height: 50px;
+  background-color: grey;
+  color: white;
+}
+.middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main {
+  min-height: calc(100vh - 100px);
+  position: relative;
+}

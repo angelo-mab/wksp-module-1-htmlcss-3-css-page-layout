@@ -9,8 +9,48 @@ body {
   justify-content: center;
 }
 
+@keyframes appear {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes burger {
+  from {
+    transform: scale(1);
+  }
+  80%{
+    transform: scale(1.2);
+  }
+  90%{
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 .fast {
+  animation: appear 1s ease-in-out;
 }
 
 .cool {
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
+  padding: 10px;
+  background-color: #1c84fe;
+  border: 0;
+  border-radius: 4px;
+  height: 4em;
+  width: 10em;
+  box-shadow: 0 0 10px grey;
+}
+
+.cool:hover {
+  animation: burger 1s ease-in-out;
 }
